@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fasttrimmatic/__init__.py
+fasttrimmatic/fasttrimmatic.py
+fasttrimmatic.egg-info/PKG-INFO
+fasttrimmatic.egg-info/SOURCES.txt
+fasttrimmatic.egg-info/dependency_links.txt
+fasttrimmatic.egg-info/entry_points.txt
+fasttrimmatic.egg-info/requires.txt
+fasttrimmatic.egg-info/top_level.txt

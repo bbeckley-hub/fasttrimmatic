@@ -1,0 +1,2 @@
+[console_scripts]
+fasttrimmatic = fasttrimmatic.fasttrimmatic:main_cli
