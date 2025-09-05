@@ -44,6 +44,17 @@ from Bio.Seq import Seq
 import numpy as np
 from tqdm import tqdm
 
+# ===== Banner =====
+def print_banner():
+    """Print the tool banner"""
+    banner = """
+=== FastTrimmatic — v1.0.0 (2025) ===
+University of Ghana / K.N.U.S.T
+U.G.M.S - Department of Medical Biochemistry
+Author: Beckley Brown <brownbeckley94@gmail.com>
+"""
+    print(banner, file=sys.stderr)
+
 # Optional ML
 try:
     from sklearn.ensemble import RandomForestClassifier
@@ -298,6 +309,9 @@ def parse_args():
     return p.parse_args()
 
 def main_cli():
+    # Print banner first
+    print_banner()
+    
     args = parse_args()
     rule_params = {
         "max_mismatch": args.max_mismatch,
@@ -307,6 +321,7 @@ def main_cli():
         "min_avg": args.min_avg,
         "min_len": args.min_len
     }
+    
     if args.verbose:
         print(f"[INFO] Parameters: {rule_params}", file=sys.stderr)
         print(f"[INFO] Adapters provided: {args.adapters}", file=sys.stderr)
