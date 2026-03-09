@@ -13,7 +13,7 @@ with:
  - Paired-end synchronized trimming and filtering
  - Multithreaded chunked streaming processing
  - Skips corrupted reads where sequence and quality lengths differ
- - Detailed logging and summary reports
+ - Detailed logging and summary reportss
 
 Dependencies:
   pip install biopython numpy tqdm
